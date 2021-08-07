@@ -163,13 +163,15 @@
     scenes.forEach(function (scene) {
         addMapMarker(scene);
         var el = document.querySelector('#sceneList .scene .text[data-id="' + scene.data.id + '"]');
-        el.addEventListener('click', function () {
-            switchScene(scene);
-            // On mobile, hide scene list after selecting a scene.
-            if (document.body.classList.contains('mobile')) {
-                hideSceneList();
-            }
-        });
+        if (el !== null) {
+            el.addEventListener('click', function () {
+                switchScene(scene);
+                // On mobile, hide scene list after selecting a scene.
+                if (document.body.classList.contains('mobile')) {
+                    hideSceneList();
+                }
+            });
+        }
     });
 
     var markerList = document.querySelectorAll(".mark");
