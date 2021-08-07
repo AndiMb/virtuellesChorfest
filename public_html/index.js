@@ -25,7 +25,7 @@
     var panoElement = document.querySelector('#pano');
     var sceneNameElement = document.querySelector('#titleBar .sceneName');
     var sceneListElement = document.querySelector('#sceneList');
-    var sceneElements = document.querySelectorAll('#sceneList .scene');
+    var sceneElements = document.querySelectorAll('#sceneList .scene .text');
     var sceneListToggleElement = document.querySelector('#sceneListToggle');
     var autorotateToggleElement = document.querySelector('#autorotateToggle');
     var fullscreenToggleElement = document.querySelector('#fullscreenToggle');
@@ -162,7 +162,7 @@
     // Set handler for scene switch.
     scenes.forEach(function (scene) {
         addMapMarker(scene);
-        var el = document.querySelector('#sceneList .scene[data-id="' + scene.data.id + '"]');
+        var el = document.querySelector('#sceneList .scene .text[data-id="' + scene.data.id + '"]');
         el.addEventListener('click', function () {
             switchScene(scene);
             // On mobile, hide scene list after selecting a scene.
