@@ -537,7 +537,7 @@
     // Switch sources when clicked.
     function switchHotspot(id, videowallid) {
         var wrapper = document.getElementById('iframespot_' + videowallid);
-        wrapper.innerHTML = data.videoIFrames[id];
+        wrapper.innerHTML = '<iframe id="' + id + '" class="youtube-video" width="560" height="315" allow="autoplay" src="https://www.youtube.com/embed/' + data.youtubeID[id] + '?enablejsapi=1&amp;autoplay=1&amp;rel=0&amp;controls=1&amp;showinfo=0&amp;" frameborder="0" allowfullscreen></iframe>';
     }
 
     function addClickEvent(element, videowallid) {

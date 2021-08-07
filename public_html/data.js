@@ -46,13 +46,13 @@ var APP_DATA = {
             "infoHotspots": [
                 {
                     "yaw": -0.38,
-                    "pitch": -0.05,
+                    "pitch": -0.09,
                     "title": "Chortissimo Dresden e. V.",
                     "text": "Genres: Klassik, Volkslied, Spiritual/Gospel, Pop, Neue Musik<br />Chorleiter*in: Stephan Thamm<br />Webseite: <a href=\"https://www.chortissimo.de\" target=\"_blank\">https://www.chortissimo.de</a><br />Proben: Donnerstag, 19:30 - 21:30, Kirche Maria Himmelfahrt Dresden"
                 },
                 {
                     "yaw": 0.055,
-                    "pitch": -0.06,
+                    "pitch": -0.04,
                     "title": "Vokalwerk Dresden e. V.",
                     "text": "Genres: Pop<br />Chorleiter*in: Cornelia Drese<br />Webseite: <a href=\"https://vokalwerk-dresden.de\" target=\"_blank\">https://vokalwerk-dresden.de</a><br />Proben: Dienstag, 18:00 - 20:00, Stilhaus Dresden"
                 }
@@ -115,8 +115,8 @@ var APP_DATA = {
                     "text": "Genres: Klassik, Volkslied, Internationale Folklore, Operette, Oper<br />Chorleiter*in: Lars Deke<br />Webseite: <a href=\"http://www.stadtchor-wsw.de\" target=\"_blank\">http://www.stadtchor-wsw.de</a><br />Proben: Montag, 19:45 - 21:15, Vereinspavillon Weißwasser"
                 },
                 {
-                    "yaw": -0.13,
-                    "pitch": -0.07,
+                    "yaw": -0.14,
+                    "pitch": -0.060,
                     "title": "AUDITIV VOKAL",
                     "text": "Genres: Klassik, Alte Musik, Neue Musik<br />Chorleiter*in: Olaf Katzer<br />Webseite: <a href=\"http://www.auditivvokal.de\" target=\"_blank\">http://www.auditivvokal.de</a><br />Proben: Probenatelier und Büro im Musikerviertel Dresden"
                 },
@@ -266,7 +266,7 @@ var APP_DATA = {
             "iframespot_yaw": 0.005,
             "iframespot_pitch": -0.16,
             "iframespot_radius": 1200,
-            "iframeselect_yaw": -0.21,
+            "iframeselect_yaw": -0.23,
             "iframeselect_pitch": -0.29,
             "levels": [
                 {
@@ -314,6 +314,10 @@ var APP_DATA = {
                 {
                     "datasource": "video4",
                     "text": "Our Father"
+                },
+                {
+                    "datasource": "video5",
+                    "text": "Auf, du junger Wandersmann & Es wollt ein Jägerlein jagen"
                 }
             ]
         },
@@ -533,10 +537,11 @@ var APP_DATA = {
         "fullscreenButton": true,
         "viewControlButtons": false
     },
-	"videoIFrames": {
-        "video1": '<iframe id="video1" class="youtube-video" width="560" height="315" allow="autoplay" src="https://www.youtube.com/embed/XVLaneDac6U?enablejsapi=1&amp;autoplay=1&amp;rel=0&amp;controls=0&amp;showinfo=0&amp;" frameborder="0" allowfullscreen></iframe>',
-        "video2": '<iframe id="video2" class="youtube-video" width="560" height="315" allow="autoplay" src="https://www.youtube.com/embed/Vf0E0Ypydms?enablejsapi=1&amp;autoplay=1&amp;rel=0&amp;controls=0&amp;showinfo=0&amp;" frameborder="0" allowfullscreen></iframe>',
-        "video3": '<iframe id="video3" class="youtube-video" width="560" height="315" allow="autoplay" src="https://www.youtube.com/embed/4zIPNWFBEDs?enablejsapi=1&amp;autoplay=1&amp;rel=0&amp;controls=0&amp;showinfo=0&amp;" frameborder="0" allowfullscreen></iframe>',
-        "video4": '<iframe id="video4" class="youtube-video" width="560" height="315" allow="autoplay" src="https://www.youtube.com/embed/Oa_ULKizeU8?enablejsapi=1&amp;autoplay=1&amp;rel=0&amp;controls=0&amp;showinfo=0&amp;" frameborder="0" allowfullscreen></iframe>'
+    "youtubeID": {
+        "video1": 'XVLaneDac6U',
+        "video2": 'Vf0E0Ypydms',
+        "video3": '4zIPNWFBEDs',
+        "video4": 'Oa_ULKizeU8',
+        "video5": '4qNsrNTrWao'
     }
 };
