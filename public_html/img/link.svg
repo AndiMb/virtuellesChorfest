@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW Home & Student 2019 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="100%" height="100%" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 100 100"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil1 {fill:white;filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));}
+   ]]>
+  </style>
+ </defs>
+  <path class="fil1" d="M50 8.33c23.01,0 41.67,18.66 41.67,41.67 0,23.01 -18.66,41.67 -41.67,41.67 -23.01,0 -41.67,-18.66 -41.67,-41.67 0,-23.01 18.66,-41.67 41.67,-41.67zm0 5c20.25,0 36.67,16.42 36.67,36.67 0,20.25 -16.42,36.67 -36.67,36.67 -20.25,0 -36.67,-16.42 -36.67,-36.67 0,-20.25 16.42,-36.67 36.67,-36.67z"/>
+  <path class="fil1" d="M50 20.56c16.26,0 29.44,13.18 29.44,29.44 0,16.26 -13.18,29.44 -29.44,29.44 -16.26,0 -29.44,-13.18 -29.44,-29.44 0,-16.26 13.18,-29.44 29.44,-29.44zm-10.2 38.19c-1.86,1.59 -4.66,1.37 -6.25,-0.49 -1.59,-1.86 -1.37,-4.66 0.49,-6.25l13.05 -11.14c1.75,-1.49 4.32,-1.39 5.94,0.16l13.05 11.42c1.84,1.61 2.03,4.41 0.42,6.25 -1.61,1.84 -4.41,2.03 -6.25,0.42l-10.31 -9.02 -10.14 8.65z"/>
+</svg>
