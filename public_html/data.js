@@ -3,9 +3,10 @@ var APP_DATA = {
         {
             "id": "0-step1",
             "name": "Eingang",
-            "videos": false,
+            "mapcontainer": "1",
             "x": "49.41%",
             "y": "97.92%",
+            "videos": false,
             "levels": [
                 {
                     "tileSize": 256,
@@ -41,6 +42,12 @@ var APP_DATA = {
                     "pitch": 0.2735728426402133,
                     "rotation": 0,
                     "target": "1-step2"
+                },
+                {
+                    "yaw": 3.2,
+                    "pitch": 0.2735728426402133,
+                    "rotation": 0,
+                    "target": "9-konzertsaal"
                 }
             ],
             "infoHotspots": [
@@ -61,6 +68,7 @@ var APP_DATA = {
         {
             "id": "1-step2",
             "name": "Position 1",
+            "mapcontainer": "1",
             "x": "49.02%",
             "y": "92.19%",
             "videos": false,
@@ -131,6 +139,7 @@ var APP_DATA = {
         {
             "id": "2-step3",
             "name": "Position 2",
+            "mapcontainer": "1",
             "x": "45.90%",
             "y": "83.46%",
             "videos": false,
@@ -194,6 +203,7 @@ var APP_DATA = {
         {
             "id": "3-hauptbuehne",
             "name": "Hauptbühne",
+            "mapcontainer": "1",
             "x": "35.74%",
             "y": "88.67%",
             "videos": true,
@@ -260,6 +270,7 @@ var APP_DATA = {
         {
             "id": "4-nebenbuehne",
             "name": "Nebenbühne",
+            "mapcontainer": "1",
             "x": "54.10%",
             "y": "85.94%",
             "videos": true,
@@ -324,6 +335,7 @@ var APP_DATA = {
         {
             "id": "5-step4",
             "name": "Position 3",
+            "mapcontainer": "1",
             "x": "43.26%",
             "y": "77.47%",
             "videos": false,
@@ -376,6 +388,7 @@ var APP_DATA = {
         {
             "id": "6-step5",
             "name": "Position 4",
+            "mapcontainer": "1",
             "x": "26.46%",
             "y": "93.23%",
             "videos": false,
@@ -428,6 +441,7 @@ var APP_DATA = {
         {
             "id": "7-step6",
             "name": "Position 5",
+            "mapcontainer": "1",
             "x": "23.14%",
             "y": "86.72%",
             "videos": false,
@@ -480,6 +494,7 @@ var APP_DATA = {
         {
             "id": "8-step7",
             "name": "Position 6",
+            "mapcontainer": "1",
             "x": "33.20%",
             "y": "82.94%",
             "videos": false,
@@ -527,6 +542,78 @@ var APP_DATA = {
                 }],
             "infoHotspots": [],
             "video_ids": []
+        },
+        {
+            "id": "9-konzertsaal",
+            "name": "Konzertsaal",
+            "mapcontainer": "2",
+            "x": "50%",
+            "y": "50%",
+            "videos": true,
+            "iframespot_yaw": 3.14,
+            "iframespot_pitch": -0.15,
+            "iframespot_radius": 900,
+            "iframeselect_yaw": 3.6,
+            "iframeselect_pitch": -0.29,
+            "levels": [
+                {
+                    "tileSize": 256,
+                    "size": 256,
+                    "fallbackOnly": true
+                },
+                {
+                    "tileSize": 512,
+                    "size": 512
+                },
+                {
+                    "tileSize": 512,
+                    "size": 1024
+                },
+                {
+                    "tileSize": 512,
+                    "size": 2048
+                },
+                {
+                    "tileSize": 512,
+                    "size": 4096
+                }
+            ],
+            "faceSize": 4096,
+            "initialViewParameters": {
+                "pitch": 0,
+                "yaw": 3.14,
+                "fov": 1.5707963267948966
+            },
+            "linkHotspots": [
+                {
+                    "yaw": 1.6,
+                    "pitch": 0.025,
+                    "rotation": 0,
+                    "target": "0-step1"
+                }],
+            "infoHotspots": [],
+            "video_ids": [
+                {
+                    "datasource": "video6",
+                    "text": "Imagine"
+                },
+                {
+                    "datasource": "video7",
+                    "text": "Roar"
+                },
+                {
+                    "datasource": "video8",
+                    "text": "Fair Phyllis I saw sitting all alone"
+                },
+                {
+                    "datasource": "video9",
+                    "text": "Rolling in the Deep"
+                },
+                {
+                    "datasource": "video10",
+                    "text": "Schöner Frühling, komm doch wieder"
+                }
+            ]
         }
     ],
     "name": "Project Title",
@@ -542,6 +629,11 @@ var APP_DATA = {
         "video2": 'Vf0E0Ypydms',
         "video3": '4zIPNWFBEDs',
         "video4": 'Oa_ULKizeU8',
-        "video5": '4qNsrNTrWao'
+        "video5": '4qNsrNTrWao',
+        "video6": 'h0NY6_KPQrA',
+        "video7": 'oT8KKG6y7rI',
+        "video8": '0Uan1b-FmKM',
+        "video9": 'Ty398uSyBKA',
+        "video10": '1Z9mkwWCC-8'
     }
 };

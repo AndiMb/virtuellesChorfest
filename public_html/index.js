@@ -32,6 +32,7 @@
     var deviceOrientationToggleElement = document.querySelector('#deviceOrientationToggle');
     var deviceOrientationControlMethod = new DeviceOrientationControlMethod();
     var mapToggleElement = document.querySelector('#mapToggle');
+    var mapContainerElements = document.querySelectorAll('.map');
 
     var activeView = null;
 
@@ -218,6 +219,7 @@
         startAutorotate();
         updateSceneName(scene);
         updateSceneList(scene);
+        updateMapImage(scene);
         updateMarker(scene);
     }
 
@@ -232,6 +234,18 @@
                 el.classList.add('current');
             } else {
                 el.classList.remove('current');
+            }
+        }
+    }
+    
+    function updateMapImage(scene){
+        //mapElement.setAttribute("src", scene.data.mapimage);
+        for (var i = 0; i < mapContainerElements.length; i++) {
+            var el = mapContainerElements[i];
+            if (el.getAttribute('id') === 'map' + scene.data.mapcontainer) {
+                el.classList.add('show');
+            } else {
+                el.classList.remove('show');
             }
         }
     }
@@ -383,12 +397,13 @@
     function addMapMarker(scene) {
         var spanElem = document.createElement('span');
         spanElem.classList.add('marker-wrapper');
+        spanElem.setAttribute("id", scene.data.id);
         spanElem.setAttribute("style", "left: " + scene.data.x + ";top: " + scene.data.y + ";");
         spanElem.innerHTML = '<svg class="mark" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 10 10" version="1.1" fill-rule="evenodd" clip-rule="evenodd" data-id="' + scene.data.id + '"><circle cx="5" cy="5" r="5" /></svg>';
         spanElem.addEventListener('click', function () {
             switchScene(scene);
         });
-        document.querySelector('#mapcontainer').appendChild(spanElem);
+        document.querySelector('#map' + scene.data.mapcontainer).appendChild(spanElem);
     }
 
     function createLinkHotspotElement(hotspot) {

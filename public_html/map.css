@@ -46,6 +46,14 @@
         opacity 0.5s ease-out;
 }
 
+.map{
+    display: none;
+}
+
+.map.show{
+    display: block;
+}
+
 .mobile .mapcon{
     top: 60px;
 }
