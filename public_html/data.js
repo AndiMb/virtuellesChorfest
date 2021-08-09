@@ -553,8 +553,8 @@ var APP_DATA = {
             "iframespot_yaw": 3.14,
             "iframespot_pitch": -0.15,
             "iframespot_radius": 900,
-            "iframeselect_yaw": 3.6,
-            "iframeselect_pitch": -0.29,
+            "iframeselect_yaw": 2.85,
+            "iframeselect_pitch": -0.31,
             "levels": [
                 {
                     "tileSize": 256,
