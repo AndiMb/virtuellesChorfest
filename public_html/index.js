@@ -20,6 +20,8 @@
     var bowser = window.bowser;
     var screenfull = window.screenfull;
     var data = window.APP_DATA;
+    var videos = window.VIDEO_DATA;
+    var logos = window.LOGO_DATA;
 
     // Grab elements from DOM.
     var panoElement = document.querySelector('#pano');
@@ -33,6 +35,70 @@
     var deviceOrientationControlMethod = new DeviceOrientationControlMethod();
     var mapToggleElement = document.querySelector('#mapToggle');
     var mapContainerElements = document.querySelectorAll('.map');
+
+    /***********************************
+     * 
+     *  Ersetze die Videos durch den Datensatz
+     * 
+     ***********************************/
+//    var titleElement = parent.document.querySelector('.zoo-itempro-grid');
+
+    /*var videos = [];
+     
+     titleElement.querySelectorAll('.uk-grid').forEach(function (divElem) {
+     var name = divElem.querySelector('.element-itemname').innerHTML;
+     //var youtubeID = divElem.querySelector('iframe').getAttribute('src').replace('https://www.youtube.com/embed/', '').replace(/\?.*$/g, '');
+     var youtubeLink = divElem.querySelector('.element-link').querySelector('a').innerHTML;
+     var youtubeID = youtubeLink.substring(youtubeLink.lastIndexOf("=") + 1);
+     let video = {
+     "name": name,
+     "youtubeID": youtubeID
+     };
+     videos.push(video);
+     divElem.remove();
+     });*/
+
+    var panoramaAnzahlMitVideo = 4;
+    let videosPerScene = Math.floor(videos.length / panoramaAnzahlMitVideo);
+    if (videos.length % panoramaAnzahlMitVideo > 0) {
+        videosPerScene++;
+    }
+    var ii = 0;
+    data.scenes.forEach(function (scene) {
+        if (scene.videos) {
+            scene.video_ids = [];
+            for (let jj = 0; jj < videosPerScene; jj++) {
+                if (ii === videos.length) {
+                    break;
+                }
+                let video = {
+                    "text": videos[ii].name,
+                    "youtubeID": videos[ii].youtubeID
+                };
+                ii++;
+                scene.video_ids.push(video);
+            }
+        }
+    });
+
+    /***********************************
+     * 
+     *  Ersetze die Logos durch den Datensatz
+     * 
+     ***********************************/
+    data.scenes.forEach(function (scene) {
+        scene.perspectiveHotspots.forEach(function (hspot) {
+            if (hspot.width === hspot.height){
+                var logo =  logos.logos_quad[Math.floor(Math.random()*logos.logos_quad.length)];
+                hspot.image = logo.image;
+                hspot.url = logo.url;
+            }else if (hspot.width > hspot.height){
+                var logo =  logos.logos_breit[Math.floor(Math.random()*logos.logos_breit.length)];
+                hspot.image = logo.image;
+                hspot.url = logo.url;
+            }
+        });
+    });
 
     var activeView = null;
 
@@ -106,8 +172,14 @@
             scene.hotspotContainer().createHotspot(element, {yaw: hotspot.yaw, pitch: hotspot.pitch});
         });
 
+        // Create perpective hotspots.
+        data.perspectiveHotspots.forEach(function (hotspot) {
+            var element = createPerspectiveHotspotElement(hotspot);
+            scene.hotspotContainer().createHotspot(element, {yaw: hotspot.yaw, pitch: hotspot.pitch}, {perspective: {radius: hotspot.radius, extraTransforms: hotspot.extraTransforms}});
+        });
+
         if (data.videos) {
-            scene.hotspotContainer().createHotspot(createVideoHotspotElement(data.id), {yaw: data.iframespot_yaw, pitch: data.iframespot_pitch}, {perspective: {radius: data.iframespot_radius, extraTransforms: "rotateX(5deg)"}});
+            scene.hotspotContainer().createHotspot(createVideoHotspotElement(data.id), {yaw: data.iframespot_yaw, pitch: data.iframespot_pitch}, {perspective: {radius: data.iframespot_radius, extraTransforms: data.iframespot_extraTransform}});
             scene.hotspotContainer().createHotspot(createVideoListHotspotElement(data.video_ids, data.id), {yaw: data.iframeselect_yaw, pitch: data.iframeselect_pitch});
         }
 
@@ -237,8 +309,8 @@
             }
         }
     }
-    
-    function updateMapImage(scene){
+
+    function updateMapImage(scene) {
         //mapElement.setAttribute("src", scene.data.mapimage);
         for (var i = 0; i < mapContainerElements.length; i++) {
             var el = mapContainerElements[i];
@@ -303,7 +375,7 @@
             return;
         }
         if (window.DeviceOrientationEvent) {
-            if (typeof (window.DeviceOrientationEvent.requestPermission) == 'function') {
+            if (typeof (window.DeviceOrientationEvent.requestPermission) === 'function') {
                 requestPermissionForIOS();
             } else {
                 enableDeviceOrientation();
@@ -366,6 +438,34 @@
         }
     }
 
+    function createPerspectiveHotspotElement(hotspot) {
+        var wrapper = document.createElement('div');
+        wrapper.setAttribute("id", "hotspot2");
+        wrapper.classList.add('perspectivehotspot');
+        wrapper.setAttribute("style", "width:" + hotspot.width + "px; height:" + hotspot.height + "px;");
+
+        var link = document.createElement('a');
+        link.setAttribute("href", hotspot.url);
+        link.setAttribute("target", "_blank");
+
+        var helperwrapper = document.createElement('div');
+        helperwrapper.classList.add('logowrapper');
+        //helperwrapper.setAttribute("style", "filter: brightness(" + hotspot.brightness + ");");
+        hotspot.addclasses.forEach(function (cl) {
+            helperwrapper.classList.add(cl);
+        });
+
+        var image = document.createElement("img");
+        image.classList.add('logoimage');
+        image.setAttribute("src", hotspot.image);
+
+        helperwrapper.appendChild(image);
+        link.appendChild(helperwrapper);
+        wrapper.appendChild(link);
+
+        return wrapper;
+    }
+
     function createVideoHotspotElement(videowallid) {
         var wrapper = document.createElement('div');
         wrapper.setAttribute("id", "iframespot_" + videowallid);
@@ -385,9 +485,9 @@
 
         video_ids.forEach(function (id) {
             var li = document.createElement("li");
-            li.setAttribute("data-source", id.datasource);
+            li.setAttribute("data-source", id.youtubeID);
             li.innerHTML = id.text;
-            addClickEvent(li, videowallid);
+            addClickEvent(li, videowallid, id.youtubeID);
             ul.appendChild(li);
         });
 
@@ -462,7 +562,7 @@
         var iconWrapper = document.createElement('div');
         iconWrapper.classList.add('info-hotspot-icon-wrapper');
         var icon = document.createElement('img');
-        icon.src = 'img/note.svg'
+        icon.src = 'img/note.svg';
         icon.classList.add('info-hotspot-icon');
         iconWrapper.appendChild(icon);
 
@@ -550,14 +650,14 @@
     }
 
     // Switch sources when clicked.
-    function switchHotspot(id, videowallid) {
+    function switchHotspot(id, videowallid, youtubeID) {
         var wrapper = document.getElementById('iframespot_' + videowallid);
-        wrapper.innerHTML = '<iframe id="' + id + '" class="youtube-video" width="560" height="315" allow="autoplay" src="https://www.youtube.com/embed/' + data.youtubeID[id] + '?enablejsapi=1&amp;autoplay=1&amp;rel=0&amp;controls=1&amp;showinfo=0&amp;" frameborder="0" allowfullscreen></iframe>';
+        wrapper.innerHTML = '<iframe id="' + id + '" class="youtube-video" width="560" height="315" allow="autoplay" src="https://www.youtube.com/embed/' + youtubeID + '?enablejsapi=1&amp;autoplay=1&amp;rel=0&amp;controls=1&amp;showinfo=0&amp;" frameborder="0" allowfullscreen></iframe>';
     }
 
-    function addClickEvent(element, videowallid) {
+    function addClickEvent(element, videowallid, youtubeID) {
         element.addEventListener('click', function () {
-            switchHotspot(element.getAttribute('data-source'), videowallid);
+            switchHotspot(element.getAttribute('data-source'), videowallid, youtubeID);
         });
     }
 

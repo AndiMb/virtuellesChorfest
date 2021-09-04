@@ -47,23 +47,34 @@ var APP_DATA = {
                     "yaw": 3.2,
                     "pitch": 0.2735728426402133,
                     "rotation": 0,
-                    "target": "9-konzertsaal"
+                    "target": "10-hauptbuehne-dorf"
                 }
             ],
-            "infoHotspots": [
+            "perspectiveHotspots": [
                 {
-                    "yaw": -0.38,
-                    "pitch": -0.09,
-                    "title": "Chortissimo Dresden e. V.",
-                    "text": "Genres: Klassik, Volkslied, Spiritual/Gospel, Pop, Neue Musik<br />Chorleiter*in: Stephan Thamm<br />Webseite: <a href=\"https://www.chortissimo.de\" target=\"_blank\">https://www.chortissimo.de</a><br />Proben: Donnerstag, 19:30 - 21:30, Kirche Maria Himmelfahrt Dresden"
+                    "yaw": -0.249,
+                    "pitch": -0.068,
+                    "image": "logos/OSCVeV_quer.png",
+                    "url": "https://www.oscvev.de",
+                    "width": 280,
+                    "height": 100,
+                    "radius": 2000,
+                    "extraTransforms": "rotateY(20deg) rotateZ(1deg)",
+                    "addclasses": ["bright62"]
                 },
                 {
-                    "yaw": 0.055,
-                    "pitch": -0.04,
-                    "title": "Vokalwerk Dresden e. V.",
-                    "text": "Genres: Pop<br />Chorleiter*in: Cornelia Drese<br />Webseite: <a href=\"https://vokalwerk-dresden.de\" target=\"_blank\">https://vokalwerk-dresden.de</a><br />Proben: Dienstag, 18:00 - 20:00, Stilhaus Dresden"
+                    "yaw": 0.023,
+                    "pitch": -0.029,
+                    "image": "logos/OSCVeV_quer.png",
+                    "url": "https://www.oscvev.de",
+                    "width": 280,
+                    "height": 100,
+                    "radius": 4700,
+                    "extraTransforms": "rotateY(-20deg)",
+                    "addclasses": ["bright61"]
                 }
-            ]
+            ],
+            "infoHotspots": []
         },
         {
             "id": "1-step2",
@@ -115,26 +126,31 @@ var APP_DATA = {
                     "target": "0-step1"
                 }
             ],
-            "infoHotspots": [
+            "perspectiveHotspots": [
                 {
-                    "yaw": -0.93,
-                    "pitch": -0.11,
-                    "title": "Stadtchor Weißwasser e. V.",
-                    "text": "Genres: Klassik, Volkslied, Internationale Folklore, Operette, Oper<br />Chorleiter*in: Lars Deke<br />Webseite: <a href=\"http://www.stadtchor-wsw.de\" target=\"_blank\">http://www.stadtchor-wsw.de</a><br />Proben: Montag, 19:45 - 21:15, Vereinspavillon Weißwasser"
+                    "yaw": -0.78,
+                    "pitch": -0.175,
+                    "image": "logos/OSCVeV_quer.png",
+                    "url": "https://www.oscvev.de",
+                    "width": 280,
+                    "height": 100,
+                    "radius": 1100,
+                    "extraTransforms": "rotateY(0deg) rotateZ(0deg)",
+                    "addclasses": ["bright59"]
                 },
                 {
-                    "yaw": -0.14,
-                    "pitch": -0.060,
-                    "title": "AUDITIV VOKAL",
-                    "text": "Genres: Klassik, Alte Musik, Neue Musik<br />Chorleiter*in: Olaf Katzer<br />Webseite: <a href=\"http://www.auditivvokal.de\" target=\"_blank\">http://www.auditivvokal.de</a><br />Proben: Probenatelier und Büro im Musikerviertel Dresden"
-                },
-                {
-                    "yaw": 0.65,
-                    "pitch": -0.11,
-                    "title": "Jazzchor Dresden",
-                    "text": "Genres: Pop, Jazz, Rock<br />Chorleiter*in: Michael Blessing<br />Webseite: <a href=\"http://www.jazzchor-dresden.de\" target=\"_blank\">http://www.jazzchor-dresden.de</a><br />Proben: Montag, 19:00 - 21:00, Museum der Bienertmühle Dresden"
+                    "yaw": -0.191,
+                    "pitch": -0.0488,
+                    "image": "logos/OSCVeV_quer.png",
+                    "url": "https://www.oscvev.de",
+                    "width": 280,
+                    "height": 100,
+                    "radius": 3800,
+                    "extraTransforms": "rotateY(13deg) rotateZ(-1deg)",
+                    "addclasses": ["bright64"]
                 }
-            ]
+            ],
+            "infoHotspots": []
         },
         {
             "id": "2-step3",
@@ -198,6 +214,52 @@ var APP_DATA = {
                     "target": "5-step4"
                 }
             ],
+            "perspectiveHotspots": [
+                {
+                    "yaw": -0.72,
+                    "pitch": -0.091,
+                    "image": "logos/OSCVeV_quer.png",
+                    "url": "https://www.oscvev.de",
+                    "width": 280,
+                    "height": 100,
+                    "radius": 1430,
+                    "extraTransforms": "rotateY(0deg) rotateZ(0deg)",
+                    "addclasses": ["bright67"]
+                },
+                {
+                    "yaw": -1.827,
+                    "pitch": -0.097,
+                    "image": "logos/OSCVeV_quer.png",
+                    "url": "https://www.oscvev.de",
+                    "width": 280,
+                    "height": 100,
+                    "radius": 1340,
+                    "extraTransforms": "rotateY(5deg) rotateX(4deg) rotateZ(0.9deg)",
+                    "addclasses": ["bright97"]
+                },
+                {
+                    "yaw": 1.288,
+                    "pitch": -0.057,
+                    "image": "logos/OSCVeV_quer.png",
+                    "url": "https://www.oscvev.de",
+                    "width": 280,
+                    "height": 100,
+                    "radius": 2280,
+                    "extraTransforms": "rotateY(3deg) rotateX(3deg) rotateZ(0.3deg)",
+                    "addclasses": ["bright66"]
+                },
+                {
+                    "yaw": 2.301,
+                    "pitch": -0.0684,
+                    "image": "logos/OSCVeV_quer.png",
+                    "url": "https://www.oscvev.de",
+                    "width": 280,
+                    "height": 100,
+                    "radius": 1900,
+                    "extraTransforms": "rotateY(-3deg) rotateX(0deg) rotateZ(0deg)",
+                    "addclasses": ["bright65"]
+                }
+            ],
             "infoHotspots": []
         },
         {
@@ -210,6 +272,7 @@ var APP_DATA = {
             "iframespot_yaw": -0.53,
             "iframespot_pitch": -0.16,
             "iframespot_radius": 1100,
+            "iframespot_extraTransform": "rotateX(0deg)",
             "iframeselect_yaw": -0.775,
             "iframeselect_pitch": -0.3,
             "levels": [
@@ -255,14 +318,38 @@ var APP_DATA = {
                     "target": "6-step5"
                 }
             ],
+            "perspectiveHotspots": [
+                {
+                    "yaw": -2.404,
+                    "pitch": -0.127,
+                    "image": "logos/OSCVeV_quer.png",
+                    "url": "https://www.oscvev.de",
+                    "width": 280,
+                    "height": 100,
+                    "radius": 1010,
+                    "extraTransforms": "rotateX(5deg) rotateY(3deg) rotateZ(0deg)",
+                    "addclasses": ["bright98"]
+                },
+                {
+                    "yaw": 0.772,
+                    "pitch": -0.0672,
+                    "image": "logos/OSCVeV_quer.png",
+                    "url": "https://www.oscvev.de",
+                    "width": 280,
+                    "height": 100,
+                    "radius": 1900,
+                    "extraTransforms": "rotateX(0deg) rotateY(0deg) rotateZ(0deg)",
+                    "addclasses": ["bright69"]
+                }
+            ],
             "infoHotspots": [],
             "video_ids": [
                 {
-                    "datasource": "video1",
+                    "youtubeID": "XVLaneDac6U",
                     "text": "When You're Smiling"
                 },
                 {
-                    "datasource": "video2",
+                    "youtubeID": "Vf0E0Ypydms",
                     "text": "Komm, lieber Mai"
                 }
             ]
@@ -277,6 +364,7 @@ var APP_DATA = {
             "iframespot_yaw": 0.005,
             "iframespot_pitch": -0.16,
             "iframespot_radius": 1200,
+            "iframespot_extraTransform": "rotateX(0deg)",
             "iframeselect_yaw": -0.23,
             "iframeselect_pitch": -0.29,
             "levels": [
@@ -316,18 +404,19 @@ var APP_DATA = {
                     "target": "2-step3"
                 }
             ],
+            "perspectiveHotspots": [],
             "infoHotspots": [],
             "video_ids": [
                 {
-                    "datasource": "video3",
+                    "youtubeID": "4zIPNWFBEDs",
                     "text": "Rothenburger Wellerman"
                 },
                 {
-                    "datasource": "video4",
+                    "youtubeID": "Oa_ULKizeU8",
                     "text": "Our Father"
                 },
                 {
-                    "datasource": "video5",
+                    "youtubeID": "4qNsrNTrWao",
                     "text": "Auf, du junger Wandersmann & Es wollt ein Jägerlein jagen"
                 }
             ]
@@ -382,6 +471,7 @@ var APP_DATA = {
                     "target": "8-step7"
                 }
             ],
+            "perspectiveHotspots": [],
             "infoHotspots": [],
             "video_ids": []
         },
@@ -435,6 +525,7 @@ var APP_DATA = {
                     "target": "7-step6"
                 }
             ],
+            "perspectiveHotspots": [],
             "infoHotspots": [],
             "video_ids": []
         },
@@ -488,6 +579,7 @@ var APP_DATA = {
                     "target": "8-step7"
                 }
             ],
+            "perspectiveHotspots": [],
             "infoHotspots": [],
             "video_ids": []
         },
@@ -540,6 +632,7 @@ var APP_DATA = {
                     "rotation": 0,
                     "target": "5-step4"
                 }],
+            "perspectiveHotspots": [],
             "infoHotspots": [],
             "video_ids": []
         },
@@ -551,10 +644,11 @@ var APP_DATA = {
             "y": "50%",
             "videos": true,
             "iframespot_yaw": 3.14,
-            "iframespot_pitch": -0.15,
-            "iframespot_radius": 900,
-            "iframeselect_yaw": 2.85,
-            "iframeselect_pitch": -0.31,
+            "iframespot_pitch": -0.17,
+            "iframespot_radius": 800,
+            "iframespot_extraTransform": "rotateX(9deg)",
+            "iframeselect_yaw": 2.8,
+            "iframeselect_pitch": -0.34,
             "levels": [
                 {
                     "tileSize": 256,
@@ -589,51 +683,218 @@ var APP_DATA = {
                     "yaw": 1.6,
                     "pitch": 0.025,
                     "rotation": 0,
-                    "target": "0-step1"
+                    "target": "11-position2_dorf"
                 }],
+            "perspectiveHotspots": [
+                {
+                    "yaw": 1.7955,
+                    "pitch": -0.027,
+                    "image": "logos/OSCVeV.png",
+                    "url": "https://www.oscvev.de",
+                    "width": 200,
+                    "height": 200,
+                    "radius": 2500,
+                    "extraTransforms": "rotateX(0deg) rotateY(-15deg) rotateZ(0deg)",
+                    "addclasses": ["bright62"]
+                },
+                {
+                    "yaw": 2.0675,
+                    "pitch": -0.007,
+                    "image": "logos/OSCVeV.png",
+                    "url": "https://www.oscvev.de",
+                    "width": 200,
+                    "height": 200,
+                    "radius": 2400,
+                    "extraTransforms": "rotateX(0deg) rotateY(-8deg) rotateZ(0deg)",
+                    "addclasses": ["bright62"]
+                },
+                {
+                    "yaw": -2.15755,
+                    "pitch": 0.069,
+                    "image": "logos/OSCVeV.png",
+                    "url": "https://www.oscvev.de",
+                    "width": 200,
+                    "height": 200,
+                    "radius": 2400,
+                    "extraTransforms": "rotateX(0deg) rotateY(-2deg) rotateZ(0deg)",
+                    "addclasses": ["bright62"]
+                },
+                {
+                    "yaw": -1.848,
+                    "pitch": -0.060,
+                    "image": "logos/OSCVeV_quer.png",
+                    "url": "https://www.oscvev.de",
+                    "width": 280,
+                    "height": 100,
+                    "radius": 1230,
+                    "extraTransforms": "rotateX(5deg) rotateY(10deg) rotateZ(0deg)",
+                    "addclasses": ["bright62"]
+                }
+            ],
             "infoHotspots": [],
             "video_ids": [
                 {
-                    "datasource": "video6",
+                    "youtubeID": "h0NY6_KPQrA",
                     "text": "Imagine"
                 },
                 {
-                    "datasource": "video7",
+                    "youtubeID": "oT8KKG6y7rI",
                     "text": "Roar"
                 },
                 {
-                    "datasource": "video8",
+                    "youtubeID": "0Uan1b-FmKM",
                     "text": "Fair Phyllis I saw sitting all alone"
                 },
                 {
-                    "datasource": "video9",
+                    "youtubeID": "Ty398uSyBKA",
                     "text": "Rolling in the Deep"
                 },
                 {
-                    "datasource": "video10",
+                    "youtubeID": "1Z9mkwWCC-8",
                     "text": "Schöner Frühling, komm doch wieder"
                 }
             ]
+        },
+        {
+            "id": "10-hauptbuehne-dorf",
+            "name": "Bühne im Dorf",
+            "mapcontainer": "3",
+            "x": "57.2%",
+            "y": "30%",
+            "videos": true,
+            "iframespot_yaw": 2.163,
+            "iframespot_pitch": -0.1,
+            "iframespot_radius": 1050,
+            "iframespot_extraTransform": "rotateX(5deg) rotateY(5deg)",
+            "iframeselect_yaw": 1.9,
+            "iframeselect_pitch": -0.25,
+            "levels": [
+                {
+                    "tileSize": 256,
+                    "size": 256,
+                    "fallbackOnly": true
+                },
+                {
+                    "tileSize": 512,
+                    "size": 512
+                },
+                {
+                    "tileSize": 512,
+                    "size": 1024
+                },
+                {
+                    "tileSize": 512,
+                    "size": 2048
+                },
+                {
+                    "tileSize": 512,
+                    "size": 4096
+                }
+            ],
+            "faceSize": 4096,
+            "initialViewParameters": {
+                "pitch": 0,
+                "yaw": 2.163,
+                "fov": 1.5707963267948966
+            },
+            "linkHotspots": [
+                {
+                    "yaw": 2.7,
+                    "pitch": 0.025,
+                    "rotation": 0.3,
+                    "target": "11-position2_dorf"
+                },
+                {
+                    "yaw": -0.4,
+                    "pitch": 0.025,
+                    "rotation": 0.0,
+                    "target": "0-step1"
+                }],
+            "perspectiveHotspots": [],
+            "infoHotspots": [],
+            "video_ids": [
+                {
+                    "youtubeID": "h0NY6_KPQrA",
+                    "text": "Imagine"
+                },
+                {
+                    "youtubeID": "oT8KKG6y7rI",
+                    "text": "Roar"
+                },
+                {
+                    "youtubeID": "0Uan1b-FmKM",
+                    "text": "Fair Phyllis I saw sitting all alone"
+                },
+                {
+                    "youtubeID": "Ty398uSyBKA",
+                    "text": "Rolling in the Deep"
+                },
+                {
+                    "youtubeID": "1Z9mkwWCC-8",
+                    "text": "Schöner Frühling, komm doch wieder"
+                }
+            ]
+        },
+        {
+            "id": "11-position2_dorf",
+            "name": "Dorf",
+            "mapcontainer": "3",
+            "x": "53%",
+            "y": "59%",
+            "videos": false,
+            "levels": [
+                {
+                    "tileSize": 256,
+                    "size": 256,
+                    "fallbackOnly": true
+                },
+                {
+                    "tileSize": 512,
+                    "size": 512
+                },
+                {
+                    "tileSize": 512,
+                    "size": 1024
+                },
+                {
+                    "tileSize": 512,
+                    "size": 2048
+                },
+                {
+                    "tileSize": 512,
+                    "size": 4096
+                }
+            ],
+            "faceSize": 4096,
+            "initialViewParameters": {
+                "pitch": 0,
+                "yaw": -1.5707963267948966,
+                "fov": 1.5707963267948966
+            },
+            "linkHotspots": [
+                {
+                    "yaw": 2.9,
+                    "pitch": 0.025,
+                    "rotation": 0,
+                    "target": "9-konzertsaal"
+                },
+                {
+                    "yaw": 1.3,
+                    "pitch": 0.025,
+                    "rotation": -1.5707963267948966,
+                    "target": "10-hauptbuehne-dorf"
+                }],
+            "perspectiveHotspots": [],
+            "infoHotspots": [],
+            "video_ids": []
         }
     ],
-    "name": "Project Title",
+    "name": "Virtuelles Chorfest",
     "settings": {
         "mouseViewMode": "drag",
         "deviceOrientationEnabled": false,
         "autorotateEnabled": false,
         "fullscreenButton": true,
         "viewControlButtons": false
-    },
-    "youtubeID": {
-        "video1": 'XVLaneDac6U',
-        "video2": 'Vf0E0Ypydms',
-        "video3": '4zIPNWFBEDs',
-        "video4": 'Oa_ULKizeU8',
-        "video5": '4qNsrNTrWao',
-        "video6": 'h0NY6_KPQrA',
-        "video7": 'oT8KKG6y7rI',
-        "video8": '0Uan1b-FmKM',
-        "video9": 'Ty398uSyBKA',
-        "video10": '1Z9mkwWCC-8'
     }
 };

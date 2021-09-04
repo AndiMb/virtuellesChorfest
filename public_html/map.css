@@ -31,10 +31,10 @@
     }
 }
 .mapcon{
-    width: 40vw; 
-    height: 30vw; /* height:width ratio = 3/4 = .75  */
-    max-height: 40vh;
-    max-width: 53.333vh; /* 4/3 = 1.333 */
+    width: 30vw; 
+    height: 22.5vw; /* height:width ratio = 3/4 = .75  */
+    max-height: 30vh;
+    max-width: 40vh; /* 4/3 = 1.333 */
     position: absolute;
     right: 10px;
     float: right;

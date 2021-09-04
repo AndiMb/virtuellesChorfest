@@ -869,6 +869,7 @@ body.view-control-buttons .viewControlButton {
 
 .videowall {
     background-color: #111;
+    /*background-color: #f00;*/
     position: relative;
     width: 560px;
     height: 315px;
@@ -995,4 +996,81 @@ body.fullscreen-enabled.mobile #mapToggle {
 
 .controlButton{
     fill: white;
+}
+
+.logowrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    background: #fff;
+/*    background: #f00; 
+    opacity: 0.5;*/
+    transition: transform .5s, filter .5s;
+    filter: brightness(60%);
+    animation: shake 1.0s;
+    animation-iteration-count: 3;
+}
+
+.logowrapper.bright58{
+    filter: brightness(58%);
+}
+
+.logowrapper.bright59{
+    filter: brightness(59%);
+}
+
+.logowrapper.bright61{
+    filter: brightness(61%);
+}
+
+.logowrapper.bright62{
+    filter: brightness(62%);
+}
+
+.logowrapper.bright64{
+    filter: brightness(64%);
+}
+
+.logowrapper.bright65{
+    filter: brightness(65%);
+}
+
+.logowrapper.bright66{
+    filter: brightness(66%);
+}
+
+.logowrapper.bright67{
+    filter: brightness(67%);
+}
+
+.logowrapper.bright69{
+    filter: brightness(69%);
+}
+
+.logowrapper.bright97{
+    filter: brightness(97%);
+}
+
+.logowrapper.bright98{
+    filter: brightness(98%);
+}
+
+.logowrapper:hover{
+    transform: scale(1.1);
+    filter: brightness(100%);
+}
+
+.logoimage{
+    /*display: none;*/
+    height: 100%; 
+    width: 100%; 
+    object-fit: contain;
+}
+
+@keyframes shake {
+  0% { transform: rotate(3deg); }
+  50% { transform: rotate(-3deg); }
+  100% { transform: rotate(3deg); }
 }
