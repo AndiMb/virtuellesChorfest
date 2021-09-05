@@ -22,6 +22,7 @@
     var data = window.APP_DATA;
     var videos = window.VIDEO_DATA;
     var logos = window.LOGO_DATA;
+    var activeScene = null;
 
     // Grab elements from DOM.
     var panoElement = document.querySelector('#pano');
@@ -88,19 +89,17 @@
      ***********************************/
     data.scenes.forEach(function (scene) {
         scene.perspectiveHotspots.forEach(function (hspot) {
-            if (hspot.width === hspot.height){
-                var logo =  logos.logos_quad[Math.floor(Math.random()*logos.logos_quad.length)];
+            if (hspot.width === hspot.height) {
+                var logo = logos.logos_quad[Math.floor(Math.random() * logos.logos_quad.length)];
                 hspot.image = logo.image;
                 hspot.url = logo.url;
-            }else if (hspot.width > hspot.height){
-                var logo =  logos.logos_breit[Math.floor(Math.random()*logos.logos_breit.length)];
+            } else if (hspot.width > hspot.height) {
+                var logo = logos.logos_breit[Math.floor(Math.random() * logos.logos_breit.length)];
                 hspot.image = logo.image;
                 hspot.url = logo.url;
             }
         });
     });
-
-    var activeView = null;
 
     // Detect desktop or mobile mode.
     if (window.matchMedia) {
@@ -285,8 +284,16 @@
     function switchScene(scene) {
         stopVideos();
         stopAutorotate();
-        scene.view.setParameters(scene.data.initialViewParameters);
-        activeView = scene.view;
+        var initialViewParameters = scene.data.initialViewParameters;
+        if (activeScene && !scene.data.videos) {
+            scene.data.linkHotspots.forEach(function (hotspot) {
+                if (hotspot.target === activeScene.data.id){
+                    initialViewParameters.yaw = scene.data.linkHotspots[hotspot.next].yaw;
+                }
+            });
+        }
+        scene.view.setParameters(initialViewParameters);
+        activeScene = scene;
         scene.scene.switchTo();
         startAutorotate();
         updateSceneName(scene);
@@ -364,7 +371,7 @@
     function enableDeviceOrientation() {
         deviceOrientationControlMethod.getPitch(function (err, pitch) {
             if (!err) {
-                activeView.setPitch(pitch);
+                activeScene.view.setPitch(pitch);
             }
         });
         controls.enableMethod('deviceOrientation');

@@ -41,13 +41,15 @@ var APP_DATA = {
                     "yaw": 0.037751761081231905,
                     "pitch": 0.2735728426402133,
                     "rotation": 0,
-                    "target": "1-step2"
+                    "target": "1-step2",
+                    "next": 1
                 },
                 {
                     "yaw": 3.2,
                     "pitch": 0.2735728426402133,
                     "rotation": 0,
-                    "target": "10-hauptbuehne-dorf"
+                    "target": "10-hauptbuehne-dorf",
+                    "next": 0
                 }
             ],
             "perspectiveHotspots": [
@@ -117,13 +119,15 @@ var APP_DATA = {
                     "yaw": -0.3,
                     "pitch": 0.2735728426402133,
                     "rotation": 0,
-                    "target": "2-step3"
+                    "target": "2-step3",
+                    "next": 1
                 },
                 {
                     "yaw": -3.29,
                     "pitch": 0.2735728426402133,
                     "rotation": 0,
-                    "target": "0-step1"
+                    "target": "0-step1",
+                    "next": 0
                 }
             ],
             "perspectiveHotspots": [
@@ -193,25 +197,29 @@ var APP_DATA = {
                     "yaw": 2.427113119,
                     "pitch": 0.2735728426402133,
                     "rotation": 0,
-                    "target": "1-step2"
+                    "target": "1-step2",
+                    "next": 3
                 },
                 {
                     "yaw": 4.75,
                     "pitch": 0.2735728426402133,
                     "rotation": 0,
-                    "target": "3-hauptbuehne"
+                    "target": "3-hauptbuehne",
+                    "next": 2
                 },
                 {
                     "yaw": 1.45,
                     "pitch": 0.2735728426402133,
                     "rotation": 0,
-                    "target": "4-nebenbuehne"
+                    "target": "4-nebenbuehne",
+                    "next": 1
                 },
                 {
                     "yaw": -0.35,
                     "pitch": 0.2735728426402133,
                     "rotation": 0,
-                    "target": "5-step4"
+                    "target": "5-step4",
+                    "next": 0
                 }
             ],
             "perspectiveHotspots": [
@@ -309,13 +317,15 @@ var APP_DATA = {
                     "yaw": 0.975,
                     "pitch": 0.2735728426402133,
                     "rotation": 0,
-                    "target": "2-step3"
+                    "target": "2-step3",
+                    "next": 1
                 },
                 {
                     "yaw": -2.0,
                     "pitch": 0.2735728426402133,
                     "rotation": 0,
-                    "target": "6-step5"
+                    "target": "6-step5",
+                    "next": 0
                 }
             ],
             "perspectiveHotspots": [
@@ -401,7 +411,8 @@ var APP_DATA = {
                     "yaw": 5.0,
                     "pitch": 0.2735728426402133,
                     "rotation": 0,
-                    "target": "2-step3"
+                    "target": "2-step3",
+                    "next": -1
                 }
             ],
             "perspectiveHotspots": [],
@@ -462,13 +473,15 @@ var APP_DATA = {
                     "yaw": 2.34,
                     "pitch": 0.2735728426402133,
                     "rotation": 0,
-                    "target": "2-step3"
+                    "target": "2-step3",
+                    "next": 1
                 },
                 {
                     "yaw": -2.3,
                     "pitch": 0.2735728426402133,
                     "rotation": 0,
-                    "target": "8-step7"
+                    "target": "8-step7",
+                    "next": 0
                 }
             ],
             "perspectiveHotspots": [],
@@ -516,13 +529,15 @@ var APP_DATA = {
                     "yaw": 1.4,
                     "pitch": 0.2735728426402133,
                     "rotation": 0,
-                    "target": "3-hauptbuehne"
+                    "target": "3-hauptbuehne",
+                    "next": 1
                 },
                 {
                     "yaw": -0.5,
                     "pitch": 0.2735728426402133,
                     "rotation": 0,
-                    "target": "7-step6"
+                    "target": "7-step6",
+                    "next": 0
                 }
             ],
             "perspectiveHotspots": [],
@@ -570,13 +585,15 @@ var APP_DATA = {
                     "yaw": -2.4,
                     "pitch": 0.2735728426402133,
                     "rotation": 0,
-                    "target": "6-step5"
+                    "target": "6-step5",
+                    "next": 1
                 },
                 {
                     "yaw": 2.2,
                     "pitch": 0.2735728426402133,
                     "rotation": 0,
-                    "target": "8-step7"
+                    "target": "8-step7",
+                    "next": 0
                 }
             ],
             "perspectiveHotspots": [],
@@ -624,13 +641,15 @@ var APP_DATA = {
                     "yaw": -1.9,
                     "pitch": 0.2735728426402133,
                     "rotation": 0,
-                    "target": "7-step6"
+                    "target": "7-step6",
+                    "next": 1
                 },
                 {
                     "yaw": 1.4,
                     "pitch": 0.2735728426402133,
                     "rotation": 0,
-                    "target": "5-step4"
+                    "target": "5-step4",
+                    "next": 0
                 }],
             "perspectiveHotspots": [],
             "infoHotspots": [],
@@ -683,7 +702,8 @@ var APP_DATA = {
                     "yaw": 1.6,
                     "pitch": 0.025,
                     "rotation": 0,
-                    "target": "11-position2_dorf"
+                    "target": "11-position2_dorf",
+                    "next": -1
                 }],
             "perspectiveHotspots": [
                 {
@@ -802,13 +822,15 @@ var APP_DATA = {
                     "yaw": 2.7,
                     "pitch": 0.025,
                     "rotation": 0.3,
-                    "target": "11-position2_dorf"
+                    "target": "11-position2_dorf",
+                    "next": 1
                 },
                 {
                     "yaw": -0.4,
                     "pitch": 0.025,
                     "rotation": 0.0,
-                    "target": "0-step1"
+                    "target": "0-step1",
+                    "next": 0
                 }],
             "perspectiveHotspots": [],
             "infoHotspots": [],
@@ -876,13 +898,15 @@ var APP_DATA = {
                     "yaw": 2.9,
                     "pitch": 0.025,
                     "rotation": 0,
-                    "target": "9-konzertsaal"
+                    "target": "9-konzertsaal",
+                    "next": 1
                 },
                 {
                     "yaw": 1.3,
                     "pitch": 0.025,
                     "rotation": -1.5707963267948966,
-                    "target": "10-hauptbuehne-dorf"
+                    "target": "10-hauptbuehne-dorf",
+                    "next": 0
                 }],
             "perspectiveHotspots": [],
             "infoHotspots": [],
