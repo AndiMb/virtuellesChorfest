@@ -79,8 +79,11 @@ body.multiple-scenes.mobile #titleBar {
     height: 100%;
     line-height: 30px;
     padding: 5px;
-    background-color: rgb(58,68,84);
-    background-color: rgba(58,68,84,0.8);
+   /* background-color: rgb(45,181,66);
+    background-color: rgba(45,181,66,0.8);*/
+    color: #555555;
+    background-color: rgb(243,239,223);
+    background-color: rgba(243,239,223,0.8);
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -103,8 +106,8 @@ body.multiple-scenes.mobile #titleBar {
     width: 40px;
     height: 40px;
     padding: 5px;
-    background-color: rgb(103,115,131);
-    background-color: rgba(103,115,131,0.8);
+    background-color: rgb(30,142,46);
+    background-color: rgba(30,142,46,0.8);
 }
 
 .mobile #fullscreenToggle {
@@ -154,8 +157,8 @@ body.fullscreen-enabled #fullscreenToggle {
     width: 40px;
     height: 40px;
     padding: 5px;
-    background-color: rgb(103,115,131);
-    background-color: rgba(103,115,131,0.8);
+    background-color: rgb(30,142,46);
+    background-color: rgba(30,142,46,0.8);
 }
 
 .mobile #autorotateToggle {
@@ -208,8 +211,8 @@ body.fullscreen-enabled.mobile #autorotateToggle {
     width: 40px;
     height: 40px;
     padding: 5px;
-    background-color: rgb(103,115,131);
-    background-color: rgba(103,115,131,0.8);
+    background-color: rgb(30,142,46);
+    background-color: rgba(30,142,46,0.8);
 }
 
 .mobile #sceneListToggle {
@@ -266,6 +269,7 @@ body.fullscreen-enabled.mobile #autorotateToggle {
     margin-left: 0;
     -webkit-transition: margin-left 0.5s ease-in-out;
     transition: margin-left 0.5s ease-in-out;
+    color: #555555;
 }
 
 .mobile #sceneList {
@@ -274,8 +278,8 @@ body.fullscreen-enabled.mobile #autorotateToggle {
 
 #sceneList .scenes {
     width: 100%;
-    background-color: rgb(58,68,84);
-    background-color: rgba(58,68,84,0.8);
+    background-color: rgb(243,239,223);
+    background-color: rgba(243,239,223,0.8);
 }
 
 .mobile #sceneList {
@@ -322,13 +326,15 @@ body.fullscreen-enabled.mobile #autorotateToggle {
 }
 
 .no-touch #sceneList .scene:hover {
-    background-color: rgb(103,115,131);
-    background-color: rgba(103,115,131,0.8);
+    color: #fff;
+    background-color: rgb(30,142,46);
+    background-color: rgba(30,142,46,0.8);
 }
 
 #sceneList .scene .text.current {
-    background-color: rgb(103,115,131);
-    background-color: rgba(103,115,131,0.8);
+    color: #fff;
+    background-color: rgb(30,142,46);
+    background-color: rgba(30,142,46,0.8);
 }
 
 /* Hide scene list when only a single scene exists */
@@ -790,8 +796,8 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
     width: 40px;
     height: 40px;
     padding: 5px;
-    background-color: rgb(103,115,131);
-    background-color: rgba(103,115,131,0.8);
+    background-color: rgb(30,142,46);
+    background-color: rgba(30,142,46,0.8);
 }
 
 body.view-control-buttons .viewControlButton {
@@ -890,8 +896,8 @@ body.view-control-buttons .viewControlButton {
     width: 40px;
     height: 40px;
     padding: 5px;
-    background-color: rgb(103,115,131);
-    background-color: rgba(103,115,131,0.8);
+    background-color: rgb(30,142,46);
+    background-color: rgba(30,142,46,0.8);
 }
 
 .mobile #deviceOrientationToggle {
@@ -946,8 +952,8 @@ body.fullscreen-enabled.mobile #deviceOrientationToggle {
     width: 40px;
     height: 40px;
     padding: 5px;
-    background-color: rgb(103,115,131);
-    background-color: rgba(103,115,131,0.8);
+    background-color: rgb(30,142,46);
+    background-color: rgba(30,142,46,0.8);
 }
 
 .mobile #mapToggle {
@@ -1073,4 +1079,23 @@ body.fullscreen-enabled.mobile #mapToggle {
   0% { transform: rotate(3deg); }
   50% { transform: rotate(-3deg); }
   100% { transform: rotate(3deg); }
+}
+
+
+#impressum {
+    display: block;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    padding: 5px;
+    background-color: rgb(30,142,46);
+    background-color: rgba(30,142,46,0.8);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    -moz-user-select: text;
+    -webkit-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
 }

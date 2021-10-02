@@ -80,7 +80,7 @@ var APP_DATA = {
         },
         {
             "id": "1-step2",
-            "name": "Position 1",
+            "name": "1. Virtuelles Chorfest",
             "mapcontainer": "1",
             "x": "49.02%",
             "y": "92.19%",
@@ -158,7 +158,7 @@ var APP_DATA = {
         },
         {
             "id": "2-step3",
-            "name": "Position 2",
+            "name": "1. Virtuelles Chorfest",
             "mapcontainer": "1",
             "x": "45.90%",
             "y": "83.46%",
@@ -434,7 +434,7 @@ var APP_DATA = {
         },
         {
             "id": "5-step4",
-            "name": "Position 3",
+            "name": "1. Virtuelles Chorfest",
             "mapcontainer": "1",
             "x": "43.26%",
             "y": "77.47%",
@@ -490,7 +490,7 @@ var APP_DATA = {
         },
         {
             "id": "6-step5",
-            "name": "Position 4",
+            "name": "1. Virtuelles Chorfest",
             "mapcontainer": "1",
             "x": "26.46%",
             "y": "93.23%",
@@ -546,7 +546,7 @@ var APP_DATA = {
         },
         {
             "id": "7-step6",
-            "name": "Position 5",
+            "name": "1. Virtuelles Chorfest",
             "mapcontainer": "1",
             "x": "23.14%",
             "y": "86.72%",
@@ -602,7 +602,7 @@ var APP_DATA = {
         },
         {
             "id": "8-step7",
-            "name": "Position 6",
+            "name": "1. Virtuelles Chorfest",
             "mapcontainer": "1",
             "x": "33.20%",
             "y": "82.94%",

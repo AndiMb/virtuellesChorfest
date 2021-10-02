@@ -2,12 +2,33 @@
 <html>
     <head>
         <title>1. Virtuelles Chorfest</title>
+        <meta name="description" content="Mit dem ersten virtuellen Chorfest präsentiert der Ostsächsische Chorverband e. V. die musikalischen Werk seiner Chöre.">
+        <meta name="keywords" content="Chorfest, Chor, Chorverband, Musik">
+        <meta name="author" content="Ostsächsischer Chorverband e. V.">
         <meta charset="utf-8">
         <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
         <style> @-ms-viewport { width: device-width; } </style>
         <link rel="stylesheet" href="vendor/reset.min.css">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="map.css">
+
+        <!-- Matomo -->
+        <script>
+            var _paq = window._paq = window._paq || [];
+            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function () {
+                var u = "//matomo.oscvev.de/";
+                _paq.push(['setTrackerUrl', u + 'matomo.php']);
+                _paq.push(['setSiteId', '6']);
+                var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+                g.async = true;
+                g.src = u + 'matomo.js';
+                s.parentNode.insertBefore(g, s);
+            })();
+        </script>
+        <!-- End Matomo Code -->
     </head>
     <body class="multiple-scenes view-control-buttons">
 
@@ -234,6 +255,10 @@
         </a>
         <a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
             <img class="icon" src="img/minus.png">
+        </a>
+        
+        <a href="https://www.oscvev.de/impressum.html" id="impressum">
+            Impressum
         </a>
 
         <div id="mapcontainer" class="mapcon">

@@ -87,14 +87,31 @@
      *  Ersetze die Logos durch den Datensatz
      * 
      ***********************************/
+    let quadLogos = logos.logos_quad
+        .map((value) => ({ value, sort: Math.random() }))
+        .sort((a, b) => a.sort - b.sort)
+        .map(({ value }) => value)
+    let landscapeLogos = logos.logos_breit
+        .map((value) => ({ value, sort: Math.random() }))
+        .sort((a, b) => a.sort - b.sort)
+        .map(({ value }) => value)
+    let iQuadLogos = 0;
+    let iLaScLogos = 0;
+    
     data.scenes.forEach(function (scene) {
         scene.perspectiveHotspots.forEach(function (hspot) {
             if (hspot.width === hspot.height) {
-                var logo = logos.logos_quad[Math.floor(Math.random() * logos.logos_quad.length)];
+                let logo = quadLogos[iQuadLogos++];
+                if (iQuadLogos === quadLogos.length){
+                    iQuadLogos = 0;
+                }
                 hspot.image = logo.image;
                 hspot.url = logo.url;
             } else if (hspot.width > hspot.height) {
-                var logo = logos.logos_breit[Math.floor(Math.random() * logos.logos_breit.length)];
+                let logo = landscapeLogos[iLaScLogos++];
+                if (iLaScLogos === landscapeLogos.length){
+                    iLaScLogos = 0;
+                }
                 hspot.image = logo.image;
                 hspot.url = logo.url;
             }
@@ -480,7 +497,7 @@
 
         var text = document.createElement("div");
         text.classList.add('message');
-        text.innerHTML = "Wähle einen Titel!";
+        text.innerHTML = "Wähle einen Titel! <br><span style=\"font-size: 0.45em;\">Dabei werden Daten an Youtube weitergeleitet.</span>";
         wrapper.appendChild(text);
 
         return wrapper;
