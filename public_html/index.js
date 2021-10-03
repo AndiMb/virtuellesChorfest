@@ -59,7 +59,7 @@
      divElem.remove();
      });*/
 
-    var panoramaAnzahlMitVideo = 4;
+    var panoramaAnzahlMitVideo = 5;
     let videosPerScene = Math.floor(videos.length / panoramaAnzahlMitVideo);
     if (videos.length % panoramaAnzahlMitVideo > 0) {
         videosPerScene++;

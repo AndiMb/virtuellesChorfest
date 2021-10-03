@@ -777,7 +777,7 @@ var APP_DATA = {
         },
         {
             "id": "10-hauptbuehne-dorf",
-            "name": "Bühne im Dorf",
+            "name": "Hauptbühne im Dorf",
             "mapcontainer": "3",
             "x": "57.2%",
             "y": "30%",
@@ -830,6 +830,13 @@ var APP_DATA = {
                     "pitch": 0.025,
                     "rotation": 0.0,
                     "target": "0-step1",
+                    "next": 0
+                },
+                {
+                    "yaw": 0.9,
+                    "pitch": 0.025,
+                    "rotation": 1.0,
+                    "target": "12-nebenbuehne-dorf",
                     "next": 0
                 }],
             "perspectiveHotspots": [],
@@ -907,10 +914,99 @@ var APP_DATA = {
                     "rotation": -1.5707963267948966,
                     "target": "10-hauptbuehne-dorf",
                     "next": 0
+                },
+                {
+                    "yaw": 1.85,
+                    "pitch": 0.025,
+                    "rotation": 1.5707963267948966,
+                    "target": "12-nebenbuehne-dorf",
+                    "next": 0
                 }],
             "perspectiveHotspots": [],
             "infoHotspots": [],
             "video_ids": []
+        },
+        {
+            "id": "12-nebenbuehne-dorf",
+            "name": "Nebenbühne im Dorf",
+            "mapcontainer": "3",
+            "x": "74%",
+            "y": "77%",
+            "videos": true,
+            "iframespot_yaw": 2.030,
+            "iframespot_pitch": -0.125,
+            "iframespot_radius": 850,
+            "iframespot_extraTransform": "rotateX(7deg) rotateY(-2deg)",
+            "iframeselect_yaw": 1.72,
+            "iframeselect_pitch": -0.29,
+            "levels": [
+                {
+                    "tileSize": 256,
+                    "size": 256,
+                    "fallbackOnly": true
+                },
+                {
+                    "tileSize": 512,
+                    "size": 512
+                },
+                {
+                    "tileSize": 512,
+                    "size": 1024
+                },
+                {
+                    "tileSize": 512,
+                    "size": 2048
+                },
+                {
+                    "tileSize": 512,
+                    "size": 4096
+                }
+            ],
+            "faceSize": 4096,
+            "initialViewParameters": {
+                "pitch": -0.125,
+                "yaw": 2.030,
+                "fov": 1.5707963267948966
+            },
+            "linkHotspots": [
+                {
+                    "yaw": -0.75,
+                    "pitch": -0.0,
+                    "rotation": 0,
+                    "target": "11-position2_dorf",
+                    "next": 1
+                },
+                {
+                    "yaw": 1.3,
+                    "pitch": 0.025,
+                    "rotation": -1.5707963267948966,
+                    "target": "10-hauptbuehne-dorf",
+                    "next": 0
+                }],
+            "perspectiveHotspots": [],
+            "infoHotspots": [],
+            "video_ids": [
+                {
+                    "youtubeID": "h0NY6_KPQrA",
+                    "text": "Imagine"
+                },
+                {
+                    "youtubeID": "oT8KKG6y7rI",
+                    "text": "Roar"
+                },
+                {
+                    "youtubeID": "0Uan1b-FmKM",
+                    "text": "Fair Phyllis I saw sitting all alone"
+                },
+                {
+                    "youtubeID": "Ty398uSyBKA",
+                    "text": "Rolling in the Deep"
+                },
+                {
+                    "youtubeID": "1Z9mkwWCC-8",
+                    "text": "Schöner Frühling, komm doch wieder"
+                }
+            ]
         }
     ],
     "name": "Virtuelles Chorfest",
